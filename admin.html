@@ -8,7 +8,7 @@
     <title>Webáruház</title>
 </head>
 <body>
-    <main class="container">
+    <main>
         <header>
             <h1>Webáruház</h1>
         </header>
@@ -23,15 +23,23 @@
                       <a class="nav-link" href="#">Galéria</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Mérettáblázat</a>
+                      <a class="nav-link" href="admin.html">Mérettáblázat</a>
                     </li>
                   </ul>
                 </div>
               </nav>
         </nav>
+        <div class="row">
+        <div class="col-md-2">
         <aside>
-            
+            <p>Keresési feltételek</p>
+            <p>A termék neve:</p>
+            <input type="text" class="form-control" placeholder="A termék neve">
+            <p>Szűrés ár szerint:</p>
+            <input type="range" class="form-range" id="customRange">
         </aside>
+        </div>
+        <div class="col-md-8">
         <article>
             <div class="container mt-3">            
                 <table class="table table-borderless">
@@ -100,9 +108,20 @@
               </div>
               
         </article>
+        </div>
+        <div class="col-md-2">
         <aside>
-
+            <h5>Kapcsolódó cikkek 1</h5>
+            <ol>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</li>
+            </ol>
+            <h5>Kapcsolódó cikkek 1</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolor aspernatur rerum possimus, culpa iure natus laudantium nostrum laborum labore obcaecati deleniti aliquam molestiae voluptate suscipit corporis, voluptas atque facere.</p>
         </aside>
+        </div>
+        </div>
         <footer>
 
         </footer>
