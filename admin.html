@@ -44,25 +44,37 @@
         </div>
         <div class="col-md-8">
         <article>
-          <legend>Adatok rögzítése</legend>
           <form action="/action_page.php">
+            <fieldset class="form-group border p-3">
+            <legend>Új termék feltöltése</legend>
+            <div class="mb-3">
+              <label for="tId" class="form-label">ID:</label>
+              <input type="number" class="form-control" id="tId" placeholder="ID" name="tId">
+            </div>
             <div class="mb-3 mt-3">
-              <label for="nev" class="form-label">Név:</label>
-              <input type="text" class="form-control" id="nev" placeholder="Név megadása" name="nev">
+              <label for="tnev" class="form-label">Termék neve:</label>
+              <input type="text" class="form-control" id="tnev" placeholder="Terméknév megadása" name="tnev">
+            </div>
+            <label for="comment">Leírás:</label>
+              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </fieldset>
+            <fieldset class="form-group border p-3">
+            <label>Méretek</label>
+            <input class="form-check-input" type="radio" id="S" name="felvitel" value="something" checked>S
+            <input class="form-check-input" type="radio" id="M" name="felvitel" value="something" checked>M
+            <input class="form-check-input" type="radio" id="L" name="felvitel" value="something" checked>L
+            <input class="form-check-input" type="radio" id="XL" name="felvitel" value="something" checked>XL
+            <input class="form-check-input" type="radio" id="XXL" name="felvitel" value="something" checked>XXL
+            <div class="mb-3">
+              <label for="tdb" class="form-label">DB:</label>
+              <input type="number" class="form-control" id="tdb" placeholder="DB" name="tdb">
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Email megadása" name="email">
-            </div>
-            <div class="mb-3">
-              <label for="szlt" class="form-label">Szállítási cím:</label>
-              <input type="text" class="form-control" id="szlt" placeholder="Szállítási cím megadása" name="szlt">
-            </div>
-            <div class="mb-3">
-              <label for="szltd" class="form-label">Szállítási dátum:</label>
-              <input type="date" class="form-control" id="szltd" placeholder="Szállítási cím megadása" name="szltd">
+              <label for="felvd" class="form-label">Felvitel dátuma:</label>
+              <input type="date" class="form-control" id="felvd" name="felvd">
             </div>
             <button type="submit" class="btn btn-primary">Kész</button>
+          </fieldset>
           </form>
             <div class="container mt-3">            
                 <table class="table table-borderless">
