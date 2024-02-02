@@ -41,6 +41,26 @@
         </div>
         <div class="col-md-8">
         <article>
+          <legend>Adatok rögzítése</legend>
+          <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+              <label for="nev" class="form-label">Név:</label>
+              <input type="text" class="form-control" id="nev" placeholder="Név megadása" name="nev">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Email megadása" name="email">
+            </div>
+            <div class="mb-3">
+              <label for="szlt" class="form-label">Szállítási cím:</label>
+              <input type="text" class="form-control" id="szlt" placeholder="Szállítási cím megadása" name="szlt">
+            </div>
+            <div class="mb-3">
+              <label for="szltd" class="form-label">Szállítási dátum:</label>
+              <input type="date" class="form-control" id="szltd" placeholder="Szállítási cím megadása" name="szltd">
+            </div>
+            <button type="submit" class="btn btn-primary">Kész</button>
+          </form>
             <div class="container mt-3">            
                 <table class="table table-borderless">
                   <thead>
